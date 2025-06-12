@@ -11,7 +11,7 @@ import { toast, ToastContainer } from 'react-toastify';
 
 
 
-const home = () => {
+const Home = () => {
   const locationRef = useRef(null);
   const serviceRef = useRef(null);
   const router = useRouter();
@@ -438,4 +438,4 @@ const home = () => {
   )
 }
 
-export default home
+export default Home
