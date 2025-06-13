@@ -23,6 +23,10 @@ const collection = 'items';
 app.use(cors());
 app.use(express.json());
 // console.log(admin.app().options.credential.projectId);
+export default function handler(req, res) {
+  const { id } = req.query;
+  res.status(200).json({ message: `Item ID is ${id}` });
+}
 // CREATE
 app.post('/items', async (req, res) => {
   try {
